@@ -1627,19 +1627,15 @@ img.phone-portrait {
 }
 .pricing-tables .col-md-3:last-child .pricing-table {
   border-radius: 0px 25px 25px 0px;
-  border-right: 2px solid rgba(255, 255, 255, 0.2);
 }
 .pricing-table {
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
+
   text-align: center;
   padding-bottom: 40px;
 }
 .pricing-table .price {
   padding: 40px 0px;
   font-weight: 600;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 .pricing-table .price .sub {
   font-size: 16px;
