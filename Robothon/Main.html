@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
@@ -21,6 +22,11 @@
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 
+<script>
+    $(window).scroll(function(){
+        $("#div").css({"margin-top": ($(window).scrollTop()) + "px", "margin-left":($(window).scrollLeft()) + "px"});
+    });
+    </script>
 
 <body>
 <div class="loader">
@@ -94,7 +100,7 @@
 </div>
 <div class="main-container">
 
-    <section class="no-pad coming-soon" id ="bg">
+    <section  class="no-pad coming-soon" id ="bg">
        <div class="background-image-holder overlay">
             <img class="background-image img-responsive" alt="Poster Image For Mobiles" style ="position:fixed ;height: 110vh;width: auto;" src="img/test.png">
         </div>
@@ -183,7 +189,49 @@
             </div><!--end of row-->
         </div><!--end of container-->
     </section>
+    <section class="pricing-1 bg-secondary-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1 class="text-white"><i style="color: white" class="fa fa-trophy" aria-hidden="true"></i> &nbsp Attractive Prizes Await You &nbsp <i style="color: white" class="fa fa-trophy" aria-hidden="true"></i></h1>
+                </div>
+            </div><!--end of row-->
 
+            <div class="row clearfix pricing-tables">
+                <div class="col-md-3  col-sm-6  no-pad-right " style="margin-left: 14%">
+                    <div class="pricing-table">
+                            <h2 class = "features" style="color: white">First Prize &nbsp <i style="color: white" class="fa fa-trophy" aria-hidden="true"></i></h2>
+                        <ul class="features">
+                            <li style="font-size: 25px"><i class="fa fa-inr" aria-hidden="true"></i> &nbsp;30,000 </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3  col-sm-6 no-pad">
+                    <div class="pricing-table">
+                            <h2 class = "features" style="color: white">Second Prize &nbsp <i style="color: white" class="fa fa-trophy" aria-hidden="true"></i></h2>
+                        <ul class="features">
+                            <li style="font-size: 25px"><i class="fa fa-inr" aria-hidden="true"></i> &nbsp;10,000 </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3  col-sm-6 no-pad-left">
+                    <div class="pricing-table">
+                            <h2 class = "features" style="color: white">Third Prize &nbsp <i style="color: white" class="fa fa-trophy" aria-hidden="true"></i></h2>
+                        <ul class="features">
+                            <li style="font-size: 25px"><i class="fa fa-inr" aria-hidden="true"></i> &nbsp;5,000 </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div><!--end of row-->
+
+        </div><!--end of container-->
+
+    </section>
 
 
 </div>
