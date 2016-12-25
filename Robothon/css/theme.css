@@ -1629,7 +1629,6 @@ img.phone-portrait {
   border-radius: 0px 25px 25px 0px;
 }
 .pricing-table {
-
   text-align: center;
   padding-bottom: 40px;
 }
@@ -2662,7 +2661,7 @@ input[type="submit"] {
 }
 .countdown-row {
   color: #fff;
-  font-size: 80px;
+  font-size: 45px;
   font-weight: 300;
 }
 .countdown-section {
@@ -2671,11 +2670,11 @@ input[type="submit"] {
 }
 .countdown-amount {
   display: inline-block;
-  margin-bottom: 48px;
+  margin-bottom: 35px;
 }
 .countdown-period {
   display: block;
-  font-size: 24px;
+  font-size: 18px;
 }
 iframe.mail-list-form {
   display: none !important;
@@ -3028,7 +3027,7 @@ footer.short-2 .contact-action:hover {
   .pricing-table {
     margin-bottom: 16px;
     border-radius: 25px !important;
-    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    border: 0px solid rgba(255, 255, 255, 0.2) !important;
   }
   .pricing-2 .hidden-sm:first-child {
     display: none;
@@ -3272,15 +3271,18 @@ footer.short-2 .contact-action:hover {
     margin-top: 32px;
   }
   .pricing-tables .no-pad {
-    padding: 0px 15px;
+    padding: 0px 30px;
   }
   .pricing-tables .no-pad-left {
-    padding-left: 15px;
+    align-content: flex-end;
+    padding-left: 30px;
   }
   .pricing-tables .no-pad-right {
-    padding-right: 15px;
+    align-content: flex-start;
+    padding-right: 30px;
   }
   .pricing-table {
+    align-content: center;
     margin-bottom: 30px;
     border-radius: 25px !important;
     border: 2px solid rgba(255, 255, 255, 0.2) !important;
