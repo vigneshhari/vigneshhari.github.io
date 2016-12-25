@@ -3,14 +3,19 @@ $(document).ready(function(){
 	"use strict";
 	
 	// Nav Sticky
-	
+
 	$(window).scroll(function(){
+
 		if($(window).scrollTop() > 500 && !$('.mobile-toggle').is(":visible")){
 			$('.top-bar').addClass('nav-sticky');
 		}else{
-			$('.top-bar').removeClass('nav-sticky');
+			$('.nav-sticky').fadeOut("slow",function(){
+                $('.nav-sticky').fadeIn();
+				$('.top-bar').removeClass('nav-sticky');
+				});
 		}
 	});
+
 	
 	// Offscreen Nav
 	
@@ -181,7 +186,7 @@ $(document).ready(function(){
 		var imgSrc= $(this).children('img').attr('src');
 		$(this).css('background', 'url("' + imgSrc + '")');
     	$(this).children('img').hide();
-        $(this).css('background-position', '0% 0%');
+        $(this).css('background-position', '50% 0%');
 	});
 	
 	// Accordion

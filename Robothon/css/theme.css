@@ -668,6 +668,7 @@ nav hr {
   color: #333333 !important;
 }
 .offscreen-container {
+
   position: fixed;
   width: 300px;
   background: #333333;
@@ -689,6 +690,7 @@ nav hr {
   transform: translate3d(0px, 0, 0);
 }
 .offscreen-menu .container {
+
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
@@ -2899,7 +2901,7 @@ footer.short-2 .contact-action:hover {
   }
   .no-align-mobile {
     padding-top: 0px !important;
-    margin-top: 300px;
+    margin-top:  300px;
   }
   h1 {
     font-size: 24px;
