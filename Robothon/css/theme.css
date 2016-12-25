@@ -1428,7 +1428,7 @@ img.phone-portrait {
 }
 .icons-large li {
   float: left;
-  margin-right: 48px;
+  margin-right: 20px;
   font-size: 48px;
   color: #e74c3c;
 }
@@ -2680,8 +2680,8 @@ iframe.mail-list-form {
   display: none !important;
 }
 footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 footer.social h1 {
   margin-bottom: 24px;
