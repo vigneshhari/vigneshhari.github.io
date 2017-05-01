@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ISQIP | CEC </title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage.js using CSS3 transformations." />
+    <meta name="keywords"  content="fullpage,jquery,anchor,links,inside,demo,css,css3" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/bulma.css" />
+
+    <!--[if IE]>
+    <script type="text/javascript">
+        var console = { log: function() {} };
+    </script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/scrolloverflow.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+                css3: true,
+                parallax: true,
+                menu: '#navBar',
+                lockAnchors: false,
+                anchors:['firstPage', 'secondPage'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Home', 'About ISQIP'],
+                showActiveTooltip: true,
+                slidesNavigation: true,
+                slidesNavPosition: 'bottom',
+
+            });
+        });
+    </script>
+
+</head>
+
+<style>
+    navBar{
+        position:fixed;
+        bottom: 10px;
+        right:10px;
+        z-index: 999;
+    }
+
+</style>
+
+<div id="fullpage">
+    <div class="section" id="section0" style="
+background: #360033;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+" >
+        <div class="hero-body" style="color: whitesmoke ">
+            <div class="container has-text-centered">
+                <h1 class="title" style="color: white; font-family: Roboto ; font-size: 6.5em ; font-weight: 200">
+                    ISQIP
+                </h1>
+                <h2 class="subtitle" style="color: whitesmoke; font-family: Roboto; font-size: 1em ; font-variant-caps: small-caps">
+                    IEEE Student Quality Improvement Programme
+                </h2>
+            </div>
+            <img src="img/ieeelogo.png" align="bottom" style="height:38px ; bottom: 25px ; right: 2%; position: absolute;">
+        </div>
+
+    </div>
+    <div class="section" id="section1 hero is-primary is-fullheight" style="background: #ffd89b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #0b8793, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #0b8793, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+">
+        <div class="">
+
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title" style="color: rgba(52,52,52,0.88); font-family: Roboto ; font-size: 4.5em ; font-weight: 200 ;">
+                        ABOUT ISQIP
+                    </h1>
+                    <h2 class="subtitle" style="color: rgba(52,52,52,0.88) ; font-family: Roboto; font-size: 1.25em ; font-variant-caps: small-caps ; margin-top: 20px">
+                        IEEE Student Quality Improvement Programme (ISQIP) is a week long internship training program from IEEE SB CEC, offering both technical and managerial sessions, for the overall development of the student. ISQIP aims at providing the trained students internships, through an internship drive held by various organizations at the college.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section2" style="
+background: #eacda3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ffd89b, #eacda3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #fd746c, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+">
+        <div class="hero-body">
+            <h1 class="title" align="center" style="  color: rgba(52,52,52,0.88); font-family: Roboto ; font-size: 4.5em ; font-weight: 200 ;">
+                Develop Design Skills
+            </h1>
+        <div class="columns">
+            <div class="column is-half" align="center">
+                Content about design goes here
+            </div>
+            <div class="column is-half" align="center">
+                Image goes here
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <div class="section" id="section3" style="
+background: #C02425;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #F0CB35, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+" >
+        <div class="hero-body">
+            <h1 class="title" align="center" style="  color: rgba(52,52,52,0.88); font-family: Roboto ; font-size: 4.5em ; font-weight: 200 ;">
+                Develop Programming Skills
+            </h1>
+            <div class="columns">
+                <div class="column is-half" align="center">
+                    Content about Programming goes here
+                </div>
+                <div class="column is-half" align="center">
+                    Image goes here
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section" id="section4" style="
+background: #C02425;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #F0CB35, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+" >
+        <div class="hero-body">
+            <h1 class="title" align="center" style="  color: rgba(52,52,52,0.88); font-family: Roboto ; font-size: 4.5em ; font-weight: 200 ;">
+                Develop Electronics Skills
+            </h1>
+            <div class="columns">
+                <div class="column is-half" align="center">
+                    Content about Programming goes here
+                </div>
+                <div class="column is-half" align="center">
+                    Image goes here
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section" id="section5" style="
+background: #C02425;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #F0CB35, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+" >
+        <div class="hero-body">
+            <h1 class="title" align="center" style="  color: rgba(52,52,52,0.88); font-family: Roboto ; font-size: 4.5em ; font-weight: 200 ;">
+                Internship Offers
+            </h1>
+            <div class="columns">
+                <div class="column is-half" align="center">
+                    Content about Programming goes here
+                </div>
+                <div class="column is-half" align="center">
+                    Image goes here
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section" id="section6" style="
+background: #C02425;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #F0CB35, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+" >
+        <div class="hero-body">
+            <h1 class="title" align="center" style="  color: rgba(52,52,52,0.88); font-family: Roboto ; font-size: 4.5em ; font-weight: 200 ;">
+                Registration
+            </h1>
+            <div class="columns">
+                <div class="column is-half" align="center">
+                    Content about Programming goes here
+                </div>
+                <div class="column is-half" align="center">
+                    Image goes here
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section" id="section7" style="
+background: #C02425;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #F0CB35, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+" >
+        <div class="hero-body">
+            <h1 class="title" align="center" style="  color: rgba(52,52,52,0.88); font-family: Roboto ; font-size: 4.5em ; font-weight: 200 ;">
+                Schedule
+            </h1>
+            <div class="columns">
+                <div class="column is-half" align="center">
+                    Content about Programming goes here
+                </div>
+                <div class="column is-half" align="center">
+                    Image goes here
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section" id="section8" style="
+background: #C02425;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #F0CB35, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+" >
+        <div class="hero-body">
+            <h1 class="title" align="center" style="  color: rgba(52,52,52,0.88); font-family: Roboto ; font-size: 4.5em ; font-weight: 200 ;">
+        End Page
+            </h1>
+            <div class="columns">
+                <div class="column is-half" align="center">
+                    Content about Programming goes here
+                </div>
+                <div class="column is-half" align="center">
+                    Image goes here
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
