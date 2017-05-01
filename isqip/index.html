@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/bulma.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
 
     <!--[if IE]>
     <script type="text/javascript">
@@ -23,7 +24,7 @@
     <script src="js/jquery-ui.min.js"></script>
 
     <script type="text/javascript" src="js/scrolloverflow.js"></script>
-
+    <script type="text/javascript" src="js/wow.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
@@ -36,13 +37,14 @@
                 anchors:['firstPage', 'secondPage'],
                 navigation: true,
                 navigationPosition: 'right',
-                navigationTooltips: ['Home', 'About ISQIP'],
+                navigationTooltips: ['Home', 'About ISQIP' , "Design" , "Programming" , 'Electronics' , 'Internships' , 'Registration' , 'Schedule' , 'Contact Us'],
                 showActiveTooltip: true,
                 slidesNavigation: true,
                 slidesNavPosition: 'bottom',
 
             });
         });
+        new WOW().init();
     </script>
 
 </head>
@@ -64,16 +66,17 @@ background: -webkit-linear-gradient(to top, #0b8793, #360033);  /* Chrome 10-25,
 background: linear-gradient(to top, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 " >
+        <img src="img/ieeelogo.png" class="wow slideInLeft" align="top" style="animation-duration:1.5s ; height:42px ; top: 2% ; left: 1%; position: absolute;">
+
         <div class="hero-body" style="color: whitesmoke ">
             <div class="container has-text-centered">
-                <h1 class="title" style="color: white; font-family: Roboto ; font-size: 6.5em ; font-weight: 200">
+                <h1 class="title wow slideInDown " style="animation-duration:1.5s ;color: white; font-family: Roboto ; font-size: 6.65em ; font-weight: 200">
                     ISQIP
                 </h1>
-                <h2 class="subtitle" style="color: whitesmoke; font-family: Roboto; font-size: 1em ; font-variant-caps: small-caps">
+                <h2 class="subtitle wow fadeInUp  " style="animation-duration:1.5s ;color: whitesmoke; font-family: Roboto; font-size: 1.25em ; margin-top: 10px; font-variant-caps: small-caps">
                     IEEE Student Quality Improvement Programme
                 </h2>
             </div>
-            <img src="img/ieeelogo.png" align="bottom" style="height:38px ; bottom: 25px ; right: 2%; position: absolute;">
         </div>
 
     </div>
@@ -120,7 +123,7 @@ background: linear-gradient(to top, #fd746c, #ffd89b); /* W3C, IE 10+/ Edge, Fir
     <div class="section" id="section3" style="
 background: #C02425;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #F0CB35, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to top, #FEAC5E, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 " >
         <div class="hero-body">
@@ -143,7 +146,7 @@ background: linear-gradient(to top, #F0CB35, #fd746c); /* W3C, IE 10+/ Edge, Fir
     <div class="section" id="section4" style="
 background: #C02425;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #c2e59c,  #F0CB35); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to top, #c2e59c,  #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 " >
         <div class="hero-body">
