@@ -8,6 +8,7 @@
     <meta name="description" content="fullPage.js using CSS3 transformations." />
     <meta name="keywords"  content="fullpage,jquery,anchor,links,inside,demo,css,css3" />
     <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
@@ -34,13 +35,30 @@
                 parallax: true,
                 menu: '#navBar',
                 lockAnchors: false,
-                anchors:['firstPage', 'secondPage'],
-                navigation: true,
+                anchors:['first', 'second' , 'third' , 'fourth' , 'fifth' , 'sixth' , 'seventh' , 'eighth' , 'ninth'],
+                fixedElements: '.header, .footer , .menu , .menu-bg , .menu-items , .menu-burger , .content , .fixed' ,
+                normalScrollElements: '.header, .footer , .menu , .menu-bg , .menu-items , .menu-burger , .content , .fixed' ,
+                css3: true,
+                scrollingSpeed: 700,
+                autoScrolling: true,
+                fitToSection: true,
+                scrollBar: false,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease',
+                loopBottom: false,
+                loopTop: false,
+                loopHorizontal: true,
+                continuousVertical: false,
+                scrollOverflow: false,
+                touchSensitivity: 15,
+                normalScrollElementTouchThreshold: 5,
+
+                /*navigation: true,
                 navigationPosition: 'right',
                 navigationTooltips: ['Home', 'About ISQIP' , "Design" , "Programming" , 'Electronics' , 'Internships' , 'Registration' , 'Schedule' , 'Contact Us'],
                 showActiveTooltip: true,
                 slidesNavigation: true,
-                slidesNavPosition: 'bottom',
+                slidesNavPosition: 'bottom',*/
 
             });
         });
@@ -49,24 +67,141 @@
 
 </head>
 
+<div class="menu-bg"></div>
+<div class="menu-burger header">☰</div>
+
+<div class="menu-items">
+    <a href="#first"><div >Home</div></a>
+    <a href="#second"><div >About ISQIP</div></a>
+    <a href="#"><div ></div></a>
+    <a href="#seventh"><div ><div >Registration</div></div></a>
+    <a href="#eighth"><div >Schedule</div></a>
+    <a href="#ninth"><div >Contact Us</div></a>
+
+</div>
+
+<script>
+    $('.menu-burger, .menu-items').on('click', function() {
+        $('.menu-bg, .menu-items, .menu-burger').toggleClass('fs');
+        $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
+    });
+</script>
 <style>
-    navBar{
-        position:fixed;
-        bottom: 10px;
-        right:10px;
-        z-index: 999;
+
+
+    body, html {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    .menu, .menu-bg, .menu-burger {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 100%;
+        right: 25px;
+        top: 25px;
+    }
+
+    .menu-bg {
+        background: #663399;
+        pointer-events: none;
+        transition: .3s;
+        right: 50px;
+        top: 50px;
+        transform: translate3d(50%, -50%, 0);
+        transform-origin: center center;
+        opacity: 0;
+    }
+    .menu-bg.fs {
+        opacity: 1;
+        transform: translate3d(50%, -50%, 0);
+        width: 300vw;
+        height: 300vw;
+    }
+
+    .menu-burger {
+        color: white;
+        padding-top: 11px;
+        -webkit-user-select: none;
+        cursor: pointer;
+        transition: .4s;
+        transform-origin: center;
+    }
+    .menu-burger.fs {
+        transform: rotate(-180deg) ;
+    }
+
+    .menu-items {
+        position: absolute;
+        font-weight: bold;
+        font-size: 30px;
+        letter-spacing: 10px;
+        color: white;
+        width: 100%;
+        text-align: center;
+        opacity: 1;
+        transition: .4s;
+        margin-top: 0px;
+        transform: translateY(-150%);
+        pointer-events: none;
+    }
+    .menu-items div {
+        transition: 1s;
+        opacity: 0;
+        margin-top: 0px;
+    }
+    .menu-items a {
+        transition: 1s;
+        opacity: 0;
+        margin-top: 0px;
+    }
+    .menu-items.fs {
+        pointer-events: auto;
+        opacity: 1;
+    }
+    .menu-items.fs div {
+        opacity: 1;
+        margin-top: 3%;
+    }
+    .menu-items.fs a {
+        opacity: 1;
+        margin-top: 3%;
+    }
+
+
+    .content {
+        padding: 100px 50px;
+        line-height: 1.62em;
+        color: #444;
+    }
+    .content h1 {
+        font-weight: bold;
+        font-size: 2em;
+        margin-bottom: 1em;
     }
 
 </style>
 
+
+
+
+
 <div id="fullpage">
+
+
+
     <div class="section" id="section0" style="
 background: #360033;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to top, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 " >
-        <img src="img/ieeelogo.png" class="wow slideInLeft" align="top" style="animation-duration:1.5s ; height:42px ; top: 2% ; left: 1%; position: absolute;">
+        <img src="img/ieeelogo.png" class="wow slideInLeft fixed" align="top" style="animation-duration:1.5s ; height:42px ; top: 2% ; left: 1%; position: absolute;">
 
         <div class="hero-body" style="color: whitesmoke ">
             <div class="container has-text-centered">
